@@ -1,0 +1,27 @@
+2023-08-01 16:06:48.402 +07:00 [INF] Now listening on: https://localhost:7141
+2023-08-01 16:06:48.429 +07:00 [INF] Now listening on: http://localhost:5084
+2023-08-01 16:06:48.431 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 16:06:48.432 +07:00 [INF] Hosting environment: Development
+2023-08-01 16:06:48.432 +07:00 [INF] Content root path: D:\University\ASP.NET\VNWalks\VNWalks.Web.API.Solution\VNWalks.Web.API
+2023-08-01 16:06:49.731 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - -
+2023-08-01 16:06:50.003 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - - - 200 - text/html;charset=utf-8 275.7970ms
+2023-08-01 16:06:50.094 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 16:06:50.094 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - -
+2023-08-01 16:06:50.109 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - - 200 12362 application/javascript;+charset=utf-8 14.3796ms
+2023-08-01 16:06:50.154 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.8956ms
+2023-08-01 16:06:50.272 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - -
+2023-08-01 16:06:50.417 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 145.6744ms
+2023-08-01 16:06:58.027 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7141/Region - -
+2023-08-01 16:06:58.033 +07:00 [INF] Executing endpoint 'VNWalks.Web.API.Controllers.RegionController.GetAll (VNWalks.Web.API)'
+2023-08-01 16:06:58.046 +07:00 [INF] Route matched with {action = "GetAll", controller = "Region"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller VNWalks.Web.API.Controllers.RegionController (VNWalks.Web.API).
+2023-08-01 16:06:58.253 +07:00 [INF] Executing action method VNWalks.Web.API.Controllers.RegionController.GetAll (VNWalks.Web.API) - Validation state: "Valid"
+2023-08-01 16:06:58.256 +07:00 [INF] Get all regions Action method was invoked
+2023-08-01 16:06:59.053 +07:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2023-08-01 16:06:59.103 +07:00 [INF] Finished get all regions request with data: [{"Id":"44b65630-0a31-46da-a714-08db893374ac","Code":"02","Name":"Ho Chi Minh","RegionImageUrl":null},{"Id":"8a4467cb-09ff-46e1-5fe8-08db89c4ed49","Code":"08","Name":"Lao Cai","RegionImageUrl":null},{"Id":"a6ea6ff1-61d3-4aae-cdc9-08db89c5c755","Code":"01","Name":"Ha Noi","RegionImageUrl":null},{"Id":"1490e0e7-a41d-4196-cdca-08db89c5c755","Code":"27","Name":"Ninh Binh","RegionImageUrl":null},{"Id":"8c40b8bb-734b-452c-cdcb-08db89c5c755","Code":"46","Name":"Tay Ninh","RegionImageUrl":null},{"Id":"d43c4ba3-c173-4e35-8f59-a98c3adc496c","Code":"30","Name":"Ha Tinh","RegionImageUrl":null},{"Id":"2459c408-89c1-4947-86d9-d2cebff3352b","Code":"42","Name":"Lam Dong","RegionImageUrl":null},{"Id":"42a416b2-36df-4f89-82d7-d77873208da7","Code":"53","Name":"Tien Giang","RegionImageUrl":null},{"Id":"72bae868-bc5c-48f8-a8ab-e29ca99e5dfc","Code":"29","Name":"Nghe An","RegionImageUrl":null}]
+2023-08-01 16:06:59.122 +07:00 [INF] Executed action method VNWalks.Web.API.Controllers.RegionController.GetAll (VNWalks.Web.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 864.3249ms.
+2023-08-01 16:06:59.131 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VNWalks.Shared.EntityModels.SqlServer.DTO.RegionDTO, VNWalks.Shared.EntityModels.SqlServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 16:06:59.139 +07:00 [INF] Executed action VNWalks.Web.API.Controllers.RegionController.GetAll (VNWalks.Web.API) in 1088.9209ms
+2023-08-01 16:06:59.140 +07:00 [INF] Executed endpoint 'VNWalks.Web.API.Controllers.RegionController.GetAll (VNWalks.Web.API)'
+2023-08-01 16:06:59.147 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7141/Region - - - 200 - application/json;+charset=utf-8 1119.3681ms

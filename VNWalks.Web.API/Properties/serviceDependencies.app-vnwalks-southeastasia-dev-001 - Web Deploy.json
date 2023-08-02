@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/sqlserver-vnwalks-southeastasia-dev-001/databases/sqldb-vnwalks-southeastasia-dev-001",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:VNWalksConnectionString",
+      "dynamicId": null
+    }
+  }
+}
